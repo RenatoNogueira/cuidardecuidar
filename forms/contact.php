@@ -38,4 +38,11 @@
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+  
+$contact->invalid_to_email = 'O e-mail para (endereço de e-mail de recebimento) está vazio ou é inválido!'; 
+$contact->invalid_from_name' = 'O nome do remetente está vazio!'; 
+$contact->invalid_from_email' = 'E-mail de: está vazio ou inválido!'; 
+$contact->invalid_subject' = 'O assunto é muito curto ou está vazio!'; 
+$contact->short' = 'é muito curto ou vazio!'; // Se o número de verificação de comprimento estiver definido e o texto da mensagem fornecido estiver abaixo do comprimento definido no método add_message() chame 
+$contact->ajax_error' = 'Desculpe, a solicitação deve ser um Ajax POST'; // Se a propriedade ajax estiver definida como verdadeira e o método post não for uma chamada AJAX
 ?>
